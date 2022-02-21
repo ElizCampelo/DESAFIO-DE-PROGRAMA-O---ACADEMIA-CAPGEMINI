@@ -1,0 +1,19 @@
+def solucaoAnagrama(s1,s2):
+    umalista1 = list(s1)
+    umalista2 = list(s2)
+
+    umalista1.sort()
+    umalista2.sort()
+
+    pos = 0
+    iguais = True
+
+    while pos < len(s1) and iguais:
+        if umalista1[pos]==umalista2[pos]:
+            pos = pos + 1
+        else:
+            iguais = False
+    print(pos)
+    return iguais
+
+print(solucaoAnagrama('marrocos','socorram'))

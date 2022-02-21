@@ -1,0 +1,19 @@
+print("Cadastre aqui sua senha com os seguintes criétios: \n"
+      "         *Ao menos 6 digitos\n"
+      "         *Ao menos uma letra MAIÚSCULA\n"
+      "         *Ao menos um número\n"
+      "         *Ao menos um caractere especial(!@#$%¨&*)\n")
+while True:
+    senha = str(input("Digite sua senha : "))
+    if senha.islower():
+        print("A senha deve ter pelo menos um caractere MAIUSCULO: ")
+    elif len(senha) < 5:
+        print("A senha deve ter pelo menos 6 caracteres: ")
+    elif senha.isupper():
+        print("A senha deve ter pelo menos um caractere Minusculo: ")
+    elif senha.isalpha():
+        print("Necessita de um numero: ")
+    elif senha.isalnum():
+        print("Necessita de um Caractere especial: ")
+    else:
+        break

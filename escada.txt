@@ -1,0 +1,8 @@
+def escada(n):
+    for i in range(n):
+        i += 1
+        print(str('*') * i)
+
+
+n = int(input('Digite quantidade de Degraus: '))
+escada(n)
